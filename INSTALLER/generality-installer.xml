@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<installation version="1.0">
+    <info>
+        <appname>Generality</appname>
+        <appversion>1.0.3 Alpha</appversion>
+        <authors>
+            <author email="pflores@codelab.com.py" name="Pedro Flores"/>
+        </authors>
+        <url>http://www.codelab.com.py/generality</url>
+        <uninstaller name="Uninstaller.jar" write="yes"/>
+        <requiresjdk>no</requiresjdk>
+        <writeinstallationinformation>no</writeinstallationinformation>
+        <pack200/>
+        <run-privileged condition="izpack.windowsinstall.vista|izpack.windowsinstall.7"/>
+    </info>
+    <guiprefs height="480" resizable="no" width="640">
+        <modifier key="useFlags" value="yes"/>
+        <modifier key="langDisplayType" value="default"/>
+    </guiprefs>
+    <locale>
+        <langpack iso3="spa"/>
+        <langpack iso3="eng"/>
+    </locale>
+    <resources>
+        <res id="shortcutSpec.xml" src="generality-installer_shortcutSpec.xml"/>
+        <res id="Unix_shortcutSpec.xml" src="generality-installer_Unix_shortcutSpec.xml"/>
+    </resources>
+    <panels>
+        <panel classname="CheckedHelloPanel"/>
+        <panel classname="PacksPanel"/>
+        <panel classname="TargetPanel"/>
+        <panel classname="InstallPanel"/>
+        <panel classname="ShortcutPanel"/>
+        <panel classname="SimpleFinishPanel"/>
+    </panels>
+    <variables>
+        <variable name="DesktopShortcutCheckboxEnabled" value="true"/>
+    </variables>
+    <packs>
+        <pack name="Generality.win.x86_64" preselected="yes" required="yes">
+            <os family="Windows"/>
+            <description/>
+            <file override="update"
+                src="H:\PROJECTS\CODELAB\ECLIPSE_HOME\indigo\generality\generality\EXPORT\generality-1.0.3-Alpha" targetdir="$INSTALL_PATH/">
+                <os arch="x86_64" family="Windows"/>
+            </file>
+            <executable failure="abort" keep="false" stage="never" targetfile="$INSTALL_PATH/generality-1.0.3-Alpha/generality.exe"/>
+        </pack>
+    </packs>
+    <native name="ShellLink.dll" type="izpack"/>
+    <native name="ShellLink_x64.dll" type="izpack"/>
+</installation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shortcuts>
+    <skipIfNotSupported/>
+    <programGroup defaultName="Generality" location="applications"/>
+    <shortcut KdeUsername="root" applications="yes" desktop="yes"
+        encoding="UTF-8"
+        iconFile="$INSTALL_PATH/generality-1.0.3-Alpha/plugins/org.jboss.ide.eclipse.freemarker_1.2.0.v20130102-1731-H97-Final/icons/icon.gif"
+        iconIndex="0" initialState="normal"
+        name="Generality 1.0.3 Alpha" programGroup="yes" startMenu="no"
+        startup="no"
+        target="$INSTALL_PATH/generality-1.0.3-Alpha/generality.exe" type="Application"/>
+</shortcuts>

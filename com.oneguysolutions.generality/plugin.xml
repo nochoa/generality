@@ -25,7 +25,7 @@
             class="org.eclipse.ui.navigator.resources.ProjectExplorer"
             icon="icons/filenav_nav.gif"
             id="com.oneguysolutions.generality.views.navigatorView"
-            name="Templates Projects"
+            name="Template Projects"
             restorable="true">
       </view>
    </extension>
